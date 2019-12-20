@@ -4,6 +4,12 @@ function my_Function()  {
     document.getElementById("Blue_Text").innerHTML = result;
 }
 
+function my_First_Function() {
+    var sentence = "I am finding that";
+    sentence += " regular lights are better on my eyes then LED lights.";
+    document.getElementById("Concatenate").innerHTML = sentence;
+}
+
 
 
 
