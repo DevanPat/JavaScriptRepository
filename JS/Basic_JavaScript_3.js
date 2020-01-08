@@ -22,3 +22,9 @@ function my_Seventh_Function()  {
     document.getElementById("Calculatedis").innerHTML = "15 minus 10, multiplied by 5, divided in 2, plus 9 equals " + Calculatedis;
 }
 
+function modulus_Operator() {
+    var Mathed = 20 % 2;
+    document.getElementById("Mathed").innerHTML = "When you divide 20 by 2 you have a remainder of: " + Mathed; 
+}
+
+
