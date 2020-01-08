@@ -44,3 +44,9 @@ var S = 9;
 S--;
 document.getElementById("Dec").innerHTML = S;
 }
+
+window.alert(Math.random());
+
+window.alert(Math.random() * 200);
+
+woindow.alert(Math.round(4.8));
