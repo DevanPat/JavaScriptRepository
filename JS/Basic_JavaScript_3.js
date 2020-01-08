@@ -32,4 +32,15 @@ function negation_Operator()    {
     document.getElementById("Negative").innerHTML = -y;
 }
 
+function increment_Operator()   {
+var G = 7;
+G++;
+document.getElementById("Inc").innerHTML = G;
+}
 
+
+function decrement_Operator()   {
+var S = 9;
+S--;
+document.getElementById("Dec").innerHTML = S;
+}
