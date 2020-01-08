@@ -27,4 +27,9 @@ function modulus_Operator() {
     document.getElementById("Mathed").innerHTML = "When you divide 20 by 2 you have a remainder of: " + Mathed; 
 }
 
+function negation_Operator()    {
+    var y = 12;
+    document.getElementById("Negative").innerHTML = -y;
+}
+
 
