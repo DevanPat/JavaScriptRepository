@@ -49,4 +49,15 @@ window.alert(Math.random());
 
 window.alert(Math.random() * 200);
 
-woindow.alert(Math.round(4.8));
+window.alert(Math.round(4.8));
+
+function my_Dictionary()    {
+    var Animal = {
+    Species:"Dog",
+    Color:"Black",
+    Breed:"Labrador",
+    Age:5,
+    Sound:"Bark!"
+};
+document.getElementById("Dictionary").innerHTML = Animal.Sound;
+}
