@@ -63,6 +63,8 @@ function not_Function2() {
     document.getElementById("Not2").innerHTML = !(30 > 10);
 }
 
+document.write(Bigger = (10 < 29) ? "Left number is bigger":"Right number is bigger");
+
 
 
 
