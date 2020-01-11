@@ -55,7 +55,13 @@ document.write(12 > 30 || 12 > 7);
 
 document.write(30 > 40 || 50 > 60);
 
+function not_Function() {
+    document.getElementById("Not").innerHTML = !(5 > 10);
+}
 
+function not_Function2() {
+    document.getElementById("Not2").innerHTML = !(30 > 10);
+}
 
 
 
