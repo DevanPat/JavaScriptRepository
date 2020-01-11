@@ -47,6 +47,14 @@ P = 11/21/1972;
 Q = 11/21/1974;
 document.write(P === Q);
 
+document.write(9 > 3 && 10 > 7);
+
+document.write(9 > 25 && 10 > 7);
+
+document.write(12 > 30 || 12 > 7);
+
+document.write(30 > 40 || 50 > 60);
+
 
 
 
