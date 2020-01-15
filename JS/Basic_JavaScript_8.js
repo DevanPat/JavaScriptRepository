@@ -12,3 +12,12 @@ function Time_function()    {
     }
     document.getElementById("Time_of_day").innerHTML = Reply;
 }
+
+function co_tate()  {
+    var sec_1 = "I was"
+    var sec_2 = " amazed at how"
+    var sec_3 = " fast the cheetah"
+    var sec_4 = " captured its prey."
+    var sentence = sec_1.concat(sec_2, sec_3, sec_4);
+    document.getElementById("Concatenate").innerHTML = sentence;
+}
