@@ -65,3 +65,17 @@ function value_Of() {
     (120).valueOf() + "<br>" +
     (117 + 3).valueOf();
 }
+
+function countdown()    {
+    var seconds = document.getElementById("seconds").value;
+
+    function tick() {
+        seconds = seconds - 1;
+        timer.innerHTML = seconds;
+        setTimeout(tick, 1000);
+        if(seconds == -1)   {
+            alert("Time's up!");
+    }
+        }
+        tick();
+}
