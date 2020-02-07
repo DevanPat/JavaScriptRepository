@@ -26,28 +26,3 @@ function Sport_Function()   {
     }
     document.getElementById("Output").innerHTML = Sport_Output;
 }
-
-function Classy_Function () {
-    var B = document.getElementsByClassName("Clicked");
-    B[1].innerHTML = "I prefer to eat some great food after my tea!";
-}
-
-var c = document.getElementById("can_Vas");
-var ctx = c.getContext("2d");
-
-var grd = ctx.createRadialGradient(70,55,3,95,62,10);
-grd.addColorStop(0, "blue");
-grd.addColorStop(1, "green");
-
-ctx.fillStyle = grd;
-ctx.fillRect(12,14,130,70);
-
-var b = document.getElementById("can_Vas");
-var ctx = c.getContext("2d");
-
-var grd = ctx.createLinearGradient(1, 5, 90, 120);
-grd.addColorStop(0, "blue");
-grd.addColorStop(1, "orange");
-
-ctx.fillStyle = grd;
-ctx.fillRect(20, 40, 130, 40);
