@@ -503,9 +503,10 @@ function checkWinCon5(info,squareArray) {
 function checkWinCon6(info,squareArray) {
 	var winCon6 = [2,5,8];
 	var winDetected = "on";
-	for (var i in info) {
-		if (info[i].charAt(0) == "2") {
-			var match2Avatar = info[i].charAt(1); // only want to record the avatar
+	for (var i in info) {				// only want to record the avatar
+		if (info[i].charAt(0) == "2") {		
+			var match2Avatar = info[i].charAt(1); 
+		} 	// only want to record the avatar
 		if (info[i].charAt(0) == "5") {
 			var match5Avatar = info[i].charAt(1);
 		}
@@ -780,11 +781,11 @@ function square9Animate() {
 
 // this function will perform the animation for the O avatar.
 function animateO(selected) {
-	selected.style.transform = (selected.style.transform == "translateY(0%)" || null) ? "translateY(0%)" : "translateY(0%)";
+	selected.style.transform = (selected.style.transform == "translateY(-100%)" || null) ? "translateY(0%)" : "translateY(-100%)";
 }
 
 // this function will perform the animation for the X avatar.
 function animateX(selected) {
-	selected.style.transform = (selected.style.transform == "translateY(-100%)" || null) ? "translateY(0%)" : "translateY(-100%)";
+	selected.style.transform = (selected.style.transform == "translateY(100%)" || null) ? "translateY(0%)" : "translateY(100%)";
 }
-}
+
