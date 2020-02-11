@@ -99,7 +99,7 @@ keys.addEventListener('click', (event) =>   {
 
 if (target.classList.contains('operator')) {
     Handle_Operator(target.value);
-    Update_Dispay();
+    Update_Display();
     return;
 }
 
@@ -109,7 +109,7 @@ if (target.classList.contains('decimal'))  {
     return;
 }
 // ensures that ac clears the numbers from the calculator
-if  (target.classlist.contains('all-clear'))    {
+if  (target.classList.contains('all-clear'))    {
     Calculator_Reset();
     Update_Display();
     return;
