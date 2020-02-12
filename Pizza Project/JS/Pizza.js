@@ -1,5 +1,5 @@
 function getReceipt()   {
-    var text1 ="<h3>You ordered:</h3>"
+    var text1 = "<h3>You ordered:</h3>"
     var runningTotal = 0;
     var sizeTotal = 0;
     var sizeArray = document.getElementsByClassName("size");
@@ -12,22 +12,21 @@ function getReceipt()   {
     if (selectedSize === "Personal Pizza")  {
         sizeTotal = 6;
     }   else if (selectedSize === "Small Pizza")    {
-        sizeTotal === 8;
+        sizeTotal = 8;
     }   else if (selectedSize === "Medium Pizza")    {
-        sizeTotal === 10;
+        sizeTotal = 10;
     }   else if (selectedSize === "Large Pizza")    {
-        sizeTotal === 12;
+        sizeTotal = 14;
     }   else if (selectedSize === "Extra Large Pizza")    {
-        sizeTotal === 14;
+        sizeTotal = 16;
     }   else if (selectedSize === "Giant Pizza")    {
-        sizeTotal === 16;
+        sizeTotal = 18;
     } 
     runningTotal = sizeTotal;
     console.log(selectedSize+" = $"+sizeTotal+".00");
     console.log("size text1: "+text1);
     console.log("subtotal: $"+runningTotal+".00");
-    // these variables will be passed on to each function
-    getTopping(runningTotal,text1);
+    getTopping(runningTotal,text1);      // these variables will be passed on to each function
     };
 
     function getTopping(runningTotal,text1)    {
@@ -56,6 +55,5 @@ function getReceipt()   {
         document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 };
 
-    {
+    
    
-}
