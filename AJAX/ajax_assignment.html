@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>AJAX54321</title>
+    </head>
+
+<div class="primary">
+<h2>The XMLHttpRequest Object</h2>
+<div class='info' id="info">
+    <input type="button" class="button" value="Get Info" id="btn_info" onclick="getInfo();"/>
+</div>
+</div>
+
+<script type="text/javascript">
+    
+    var ajax = new XMLHTTPRequest();
+    
+    ajax.open('GET', 'info.html');
+
+    ajax.onreadystatechange = function()    {
+        if (ajax.readyState == 4)   {
+            document.getElementById("info").innerHTML = ajax.responseText;
+        }
+    }
+    
+    function getInfo();     {
+    ajax.send();
+    document.getElementById('btn_info').style.display = 'none';
+    }
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
