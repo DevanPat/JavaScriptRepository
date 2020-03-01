@@ -2,14 +2,98 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
+        <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <style type="text/css">
+       html {
+           background-color: black;
+       }
+        body    {
+            background-color: white;
+            opacity: 1;
+            transition: 3s opacity;
+        }
+        body.fade-out    {
+            opacity: 0;
+            transition: none;
+        }
+        </style> <!--- CSS -->
     </head>
+
+        <!-- NAV  -->
+        <p><a href="#forms">Form Section</a></p>
+        <p><a href="#image">Image Section</a></p>
+        <!-- NAV-->
+
+
     <body>
-        <form>            
+        <script>document.body.className += ' fade-out';
+        $(function() {
+            $('body').removeClass('fade-out');
+        });
+        
+        function validateForm() {
+    var x = document.forms["myForm"]["phone number"].value;
+    if( x == "")    {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm()    {
+    document.getElementById("myForm").style.display = "none";
+}
+
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function()  {
+            $('#slideshow > div:first')
+            .fadeout(1000)
+            .next()
+            .fadein(1000)
+            .end()
+            .appendto('#slideshow');
+        }, 3000);
+        </script>
+           
+           <h2 style="font-size:10vw;">Hello World!</h2>
+           <div class="cardcontainer">
+            <h1 id="image"></h1>
+            <img src="./img/paintsplats.jpg" alt="paint splats" width="250" height="255">
+           </div>
+        <h2 id="forms"></h2><form>            
             First Name:<br>
             <input type="text" name="firstname"><br>
             Last name:<br>
             <input type="text" name="lastname">
         </form>
+        <form name="myForm1" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <label for="phone number">Phone Number:</label><br>
+            <input type="text" id="phone number" name="   -   -    " required>
+            <input type="submit" value="Submit">
+        </form>
+        <h2 id="forms"></h2><div class="Form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+            <center><h2>Login Here</h2></center>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="text" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form> 
+
+
+         </div>
+         <h1></h1>
+
+         <script src="./JS/JavaScript_Challenge.js"></script>
     </body>    
 </html>
